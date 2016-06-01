@@ -32,6 +32,10 @@ class IntroVC: UIViewController {
         //Uncomment to automatically sign in the user.
         //GIDSignIn.sharedInstance().signInSilently()
         
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
         animateViewDidLoad()
         
     }
@@ -126,6 +130,13 @@ extension IntroVC: GIDSignInDelegate {
                     print("Something went wrong")
                 } else {
                     //User logged in...do something
+                    print("Logged in. \(user)")
+                    let userData = ["provider": credential.provider]
+                    DataService.ds.createFirebaseUser(user!.uid, user: userData)
+                    
+                    NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
+                    print(user!.uid)
+                    self.performSegueWithIdentifier(IntroVCToHomeVC, sender: nil)
                 }
             }
         }

@@ -50,6 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, openURL url: NSURL,
                      sourceApplication: String?, annotation: AnyObject) -> Bool {
+        
+        if url.scheme == "com.googleusercontent.apps.286273098203-1kosbe6iajni0fm8eacoemjgtqc1soor" {
+            return GIDSignIn.sharedInstance().handleURL(url, sourceApplication: sourceApplication, annotation: annotation)
+        }
+        
         return FBSDKApplicationDelegate.sharedInstance()
             .application(application, openURL: url,
                          sourceApplication: sourceApplication, annotation: annotation)

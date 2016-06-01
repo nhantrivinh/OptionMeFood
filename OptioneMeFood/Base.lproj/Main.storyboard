@@ -204,7 +204,7 @@
                         <outlet property="logo" destination="UTH-5E-Ulv" id="49c-AN-aJO"/>
                         <outlet property="viewBtnFb" destination="t9Q-33-lQ9" id="ygy-bo-pyH"/>
                         <outlet property="viewBtnGg" destination="LhE-OZ-SFY" id="USt-wE-x9x"/>
-                        <segue destination="DjZ-i7-1Gr" kind="presentation" identifier="IntroVCToHomeVC" id="Pvn-7s-rbA"/>
+                        <segue destination="DjZ-i7-1Gr" kind="presentation" identifier="IntroVCToHomeVC" modalTransitionStyle="crossDissolve" id="Pvn-7s-rbA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHY-Kv-Esa" sceneMemberID="firstResponder"/>
