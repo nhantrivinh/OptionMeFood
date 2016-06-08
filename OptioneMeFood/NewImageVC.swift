@@ -7,13 +7,32 @@
 //
 
 import UIKit
+import Firebase
 
-class NewImageVC: UIViewController {
-
+class NewImageVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    
+    let imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        imagePicker.delegate = self
         // Do any additional setup after loading the view.
+        // File located on disk
+//        let localFile: NSURL = ...
+        // Create a reference to the file you want to upload
+//        let riversRef = REF_STORAGE_IMAGES.child(<#T##path: String##String#>)
+        
+        // Upload the file to the path "images/rivers.jpg"
+//        let uploadTask = riversRef.putFile(localFile, metadata: nil) { metadata, error in
+//            if (error != nil) {
+//                // Uh-oh, an error occurred!
+//            } else {
+//                // Metadata contains file metadata such as size, content-type, and download URL.
+//                let downloadURL = metadata!.downloadURL
+//            }
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +41,14 @@ class NewImageVC: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func selectImage() {
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .PhotoLibrary
     }
-    */
+    
+    func selectCamera() {
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .Camera
+    }
 
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451C3A551D01381000519E04 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C3A541D01381000519E04 /* TabBarVC.swift */; };
+		451C3A581D016D2E00519E04 /* NewUsernameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C3A571D016D2E00519E04 /* NewUsernameVC.swift */; };
+		451C3A5A1D017C6F00519E04 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C3A591D017C6F00519E04 /* SegueFromLeft.swift */; };
+		451C3A5C1D0184A000519E04 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451C3A5B1D0184A000519E04 /* SegueFromRight.swift */; };
 		45624E731CFE885D006F1A67 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45624E701CFE885D006F1A67 /* FBSDKCoreKit.framework */; };
 		45624E741CFE885D006F1A67 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45624E711CFE885D006F1A67 /* FBSDKLoginKit.framework */; };
 		45624E751CFE885D006F1A67 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45624E721CFE885D006F1A67 /* FBSDKShareKit.framework */; };
@@ -42,7 +46,6 @@
 		4574BD081CFEE1A8005E4531 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574BCEB1CFEE1A8005E4531 /* TransitionZoom.swift */; };
 		4574BD091CFEE1A8005E4531 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574BCEC1CFEE1A8005E4531 /* UnwindSegue.swift */; };
 		45D237661CFDCA5400EC7809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D237651CFDCA5400EC7809 /* AppDelegate.swift */; };
-		45D237681CFDCA5400EC7809 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D237671CFDCA5400EC7809 /* ViewController.swift */; };
 		45D2376B1CFDCA5400EC7809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D237691CFDCA5400EC7809 /* Main.storyboard */; };
 		45D2376D1CFDCA5400EC7809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D2376C1CFDCA5400EC7809 /* Assets.xcassets */; };
 		45D237701CFDCA5400EC7809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D2376E1CFDCA5400EC7809 /* LaunchScreen.storyboard */; };
@@ -51,12 +54,17 @@
 		45D2377C1CFDCBC400EC7809 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D237791CFDCBC400EC7809 /* IntroVC.swift */; };
 		45D2377E1CFDCBD700EC7809 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D2377D1CFDCBD700EC7809 /* Constants.swift */; };
 		45D237841CFDCE4400EC7809 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45D237831CFDCE4400EC7809 /* GoogleService-Info.plist */; };
+		45EBA5CE1D069064008672BA /* NewImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EBA5CD1D069064008672BA /* NewImageVC.swift */; };
 		D65F97DE52C65D8D611E085A /* Pods_OptionMeFood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411F04E96DC8ACC64DE30AE1 /* Pods_OptionMeFood.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18CBFB8E98651170736437A3 /* Pods-OptionMeFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptionMeFood.release.xcconfig"; path = "Pods/Target Support Files/Pods-OptionMeFood/Pods-OptionMeFood.release.xcconfig"; sourceTree = "<group>"; };
 		411F04E96DC8ACC64DE30AE1 /* Pods_OptionMeFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OptionMeFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		451C3A541D01381000519E04 /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		451C3A571D016D2E00519E04 /* NewUsernameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUsernameVC.swift; sourceTree = "<group>"; };
+		451C3A591D017C6F00519E04 /* SegueFromLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
+		451C3A5B1D0184A000519E04 /* SegueFromRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		45624E701CFE885D006F1A67 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		45624E711CFE885D006F1A67 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		45624E721CFE885D006F1A67 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -95,7 +103,6 @@
 		4574BD2F1CFEFC81005E4531 /* OptionMeFood-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OptionMeFood-Bridging-Header.h"; sourceTree = "<group>"; };
 		45D237621CFDCA5400EC7809 /* OptionMeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OptionMeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D237651CFDCA5400EC7809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45D237671CFDCA5400EC7809 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45D2376A1CFDCA5400EC7809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45D2376C1CFDCA5400EC7809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45D2376F1CFDCA5400EC7809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,6 +112,7 @@
 		45D237791CFDCBC400EC7809 /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
 		45D2377D1CFDCBD700EC7809 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45D237831CFDCE4400EC7809 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		45EBA5CD1D069064008672BA /* NewImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewImageVC.swift; sourceTree = "<group>"; };
 		F6E8DFCBBC06E4A76298CE9C /* Pods-OptionMeFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OptionMeFood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OptionMeFood/Pods-OptionMeFood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,11 +225,12 @@
 		45D237811CFDCBFC00EC7809 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				45D237671CFDCA5400EC7809 /* ViewController.swift */,
-				45D237771CFDCBC400EC7809 /* MaterialView.swift */,
-				45D237781CFDCBC400EC7809 /* MaterialBtn.swift */,
 				45D237791CFDCBC400EC7809 /* IntroVC.swift */,
+				45EBA5CF1D069073008672BA /* NewUserVCs */,
 				4574BC901CFEA785005E4531 /* HomeVC.swift */,
+				451C3A541D01381000519E04 /* TabBarVC.swift */,
+				45EBA5CC1D06901F008672BA /* Styles */,
+				45EBA5CB1D069010008672BA /* Segues */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -232,6 +241,33 @@
 				45D2377D1CFDCBD700EC7809 /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		45EBA5CB1D069010008672BA /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				451C3A591D017C6F00519E04 /* SegueFromLeft.swift */,
+				451C3A5B1D0184A000519E04 /* SegueFromRight.swift */,
+			);
+			name = Segues;
+			sourceTree = "<group>";
+		};
+		45EBA5CC1D06901F008672BA /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				45D237771CFDCBC400EC7809 /* MaterialView.swift */,
+				45D237781CFDCBC400EC7809 /* MaterialBtn.swift */,
+			);
+			name = Styles;
+			sourceTree = "<group>";
+		};
+		45EBA5CF1D069073008672BA /* NewUserVCs */ = {
+			isa = PBXGroup;
+			children = (
+				451C3A571D016D2E00519E04 /* NewUsernameVC.swift */,
+				45EBA5CD1D069064008672BA /* NewImageVC.swift */,
+			);
+			name = NewUserVCs;
 			sourceTree = "<group>";
 		};
 		A24B5B59BB9448AC3DBDA009 /* Frameworks */ = {
@@ -380,6 +416,7 @@
 				4574BD011CFEE1A8005E4531 /* SpringButton.swift in Sources */,
 				4574BCF41CFEE1A8005E4531 /* DesignableTabBarController.swift in Sources */,
 				4574BD031CFEE1A8005E4531 /* SpringLabel.swift in Sources */,
+				451C3A5A1D017C6F00519E04 /* SegueFromLeft.swift in Sources */,
 				4574BCF61CFEE1A8005E4531 /* DesignableTextView.swift in Sources */,
 				4574BD081CFEE1A8005E4531 /* TransitionZoom.swift in Sources */,
 				45624E781CFE8ED3006F1A67 /* DataService.swift in Sources */,
@@ -391,15 +428,18 @@
 				4574BCFE1CFEE1A8005E4531 /* SoundPlayer.swift in Sources */,
 				45D2377A1CFDCBC400EC7809 /* MaterialView.swift in Sources */,
 				4574BCF01CFEE1A8005E4531 /* BlurView.swift in Sources */,
+				45EBA5CE1D069064008672BA /* NewImageVC.swift in Sources */,
 				4574BCFA1CFEE1A8005E4531 /* KeyboardLayoutConstraint.swift in Sources */,
 				4574BD001CFEE1A8005E4531 /* SpringAnimation.swift in Sources */,
+				451C3A5C1D0184A000519E04 /* SegueFromRight.swift in Sources */,
 				4574BCFD1CFEE1A8005E4531 /* Misc.swift in Sources */,
+				451C3A551D01381000519E04 /* TabBarVC.swift in Sources */,
 				4574BD071CFEE1A8005E4531 /* TransitionManager.swift in Sources */,
 				4574BCF21CFEE1A8005E4531 /* DesignableImageView.swift in Sources */,
-				45D237681CFDCA5400EC7809 /* ViewController.swift in Sources */,
 				4574BCED1CFEE1A8005E4531 /* AsyncButton.swift in Sources */,
 				4574BD091CFEE1A8005E4531 /* UnwindSegue.swift in Sources */,
 				45D237661CFDCA5400EC7809 /* AppDelegate.swift in Sources */,
+				451C3A581D016D2E00519E04 /* NewUsernameVC.swift in Sources */,
 				4574BD061CFEE1A8005E4531 /* SpringView.swift in Sources */,
 				4574BCF31CFEE1A8005E4531 /* DesignableLabel.swift in Sources */,
 				4574BCEF1CFEE1A8005E4531 /* AutoTextView.swift in Sources */,
@@ -469,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -509,7 +549,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -538,6 +578,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "OptioneMeFood/OptionMeFood-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -561,6 +602,7 @@
 				PRODUCT_NAME = OptionMeFood;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "OptioneMeFood/OptionMeFood-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

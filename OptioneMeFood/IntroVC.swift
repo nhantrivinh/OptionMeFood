@@ -42,15 +42,19 @@ class IntroVC: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         //If the user is already logged in take them straight to the next screen
-        if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
-            self.performSegueWithIdentifier(IntroVCToHomeVC, sender: nil)
+        if let uid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) {
+            if let displayName = NSUserDefaults.standardUserDefaults().valueForKey(KEY_DISPLAYNAME) {
+                self.performSegueWithIdentifier(Constants.Segues.IntroToSignUp, sender: nil)
+                print(uid)
+                print(displayName)
+            }
         }
     }
 
     @IBAction func btnPressedFbLogin(sender: AnyObject) {
   
         let fbLogin = FBSDKLoginManager()
-        fbLogin.logInWithReadPermissions(["email"]) { (facebookResult: FBSDKLoginManagerLoginResult!, facebookError: NSError!) in
+        fbLogin.logInWithReadPermissions(["public_profile", "user_friends", "email"]) { (facebookResult: FBSDKLoginManagerLoginResult!, facebookError: NSError!) in
             
             if facebookError != nil {
                 print("FB login failed. Error \(facebookError.debugDescription)")
@@ -61,18 +65,21 @@ class IntroVC: UIViewController {
                     print("Successfully logged in with FB \(accessToken)")
 
                     let credential = FIRFacebookAuthProvider.credentialWithAccessToken(accessToken)
-                    
-                    FIRAuth.auth()?.signInWithCredential(credential, completion: { (user, error) in
+
+                FIRAuth.auth()?.signInWithCredential(credential, completion: { (user, error) in
                         if error != nil {
                             print("Login failed. \(error)")
                             
                         } else {
-                            print("Logged in. \(user)")
+                            print("Logged in. \(user) \(user?.uid)")
                             let userData = ["provider": credential.provider]
-                            DataService.ds.createFirebaseUser(user!.uid, user: userData)
+                            DataService.instance.createFirebaseUser(user!.uid, user: userData)
                             
                             NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
-                            self.performSegueWithIdentifier(IntroVCToHomeVC, sender: nil)
+                            NSUserDefaults.standardUserDefaults().setValue(user!.displayName, forKey: KEY_DISPLAYNAME)
+                            print(user!.uid)
+                            print(user!.displayName!)
+                            self.performSegueWithIdentifier(Constants.Segues.IntroToSignUp, sender: nil)
 
                         }
                     })
@@ -86,9 +93,6 @@ class IntroVC: UIViewController {
     
     //Blahblah
     func animateViewDidLoad() {
-        let OPAQUE: CGFloat = 1.0
-        let TRANSPARENT: CGFloat = 0.0
-        
         let fullFrame = self.view.frame.width * 2
         print(fullFrame)
         let radiusFrame = (114 - fullFrame)/2
@@ -109,6 +113,10 @@ class IntroVC: UIViewController {
             self.btnFb.alpha = OPAQUE
             self.btnGg.alpha = OPAQUE
             }, completion: nil)
+        
+        UIView.animateWithDuration(1.0) { 
+            
+        }
     }
     
     
@@ -132,11 +140,12 @@ extension IntroVC: GIDSignInDelegate {
                     //User logged in...do something
                     print("Logged in. \(user)")
                     let userData = ["provider": credential.provider]
-                    DataService.ds.createFirebaseUser(user!.uid, user: userData)
+                    DataService.instance.createFirebaseUser(user!.uid, user: userData)
                     
                     NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
+                    NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
                     print(user!.uid)
-                    self.performSegueWithIdentifier(IntroVCToHomeVC, sender: nil)
+                    self.performSegueWithIdentifier(Constants.Segues.IntroToSignUp, sender: nil)
                 }
             }
         }

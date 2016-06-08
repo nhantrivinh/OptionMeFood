@@ -14,22 +14,20 @@ class TabBarVC: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let topBorder = CALayer()
+        topBorder.frame = CGRectMake(0, 0, 1000, 0.5)
+        topBorder.backgroundColor = UIColor(red: 229, green: 231, blue: 235, alpha: 1.0).CGColor
+        
+        tabBar.layer.addSublayer(topBorder)
+        tabBar.clipsToBounds = true
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
