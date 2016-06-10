@@ -32,6 +32,7 @@ class NewUsernameVC: UIViewController, UITextFieldDelegate {
 
     @IBAction func didTapNextBtn(sender: AnyObject) {
         
+        
         usernameRepeats = false
         let charCount = tfUsername.text!.characters.count
         let usernameInput = tfUsername.text!
@@ -45,37 +46,31 @@ class NewUsernameVC: UIViewController, UITextFieldDelegate {
             lblReport.text = "Checking..."
             print("Validation Time")
             
-//            DataService.instance.REF_USERNAMES.queryOrderedByKey().observeEventType(.Value, withBlock: { snapshot in
-                let refUser = DataService.instance.REF_USERNAMES.child(usernameInput)
-                print(refUser)
-                //refUser.queryOrderedByKey()
-                refUser.queryOrderedByKey().observeEventType(.Value, withBlock: { snapshot in
-                    print("This is the snapshot",snapshot)
-                    
-                    if snapshot.value is NSNull {
-                        self.usernameRepeats = false
-                    } else {
-                        self.usernameRepeats = true
-                    }
-                    
-                    if self.usernameRepeats == false {
-                        print("username created")
-                        self.lblReport.text = ""
-                        
-                        let uid = 0123456789
-                        let appUsername: Dictionary<String, AnyObject> = [usernameInput: uid]
-                        DataService.instance.createFirebaseUsername(appUsername)
-                        
-                        self.performSegueWithIdentifier(Constants.Segues.SignUpToSignUpImage, sender: nil)
-                    } else {
-                        print(self.usernameRepeats)
-                        print("username already existed")
-                        self.lblReport.text = "Username already exists"
-                    }
-                    
-                })
+            let refUser = DataService.instance.REF_USERNAMES.child(usernameInput)
+            print(refUser)
 
-//            })
+            refUser.queryOrderedByKey().observeEventType(.Value, withBlock: { snapshot in
+                print("This is the snapshot",snapshot)
+                
+                if snapshot.value is NSNull {
+                    print("username created")
+                    self.lblReport.text = ""
+                    
+                    let uid = 0123456789
+                    let appUsername: Dictionary<String, AnyObject> = [usernameInput: uid]
+                    DataService.instance.createFirebaseUsername(appUsername)
+                    
+                    self.performSegueWithIdentifier(Constants.Segues.SignUpToSignUpImage, sender: nil)
+                    
+                } else {
+                    print(self.usernameRepeats)
+                    print("username already existed")
+                    self.lblReport.text = "Username already exists"
+                }
+
+                
+            })
+
             
         }
     }

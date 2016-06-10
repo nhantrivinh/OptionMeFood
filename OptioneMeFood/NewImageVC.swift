@@ -32,24 +32,38 @@ class NewImageVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         // Dispose of any resources that can be recreated.
     }
     
-//    @IBAction func doneBtnDidTouch(sender: AnyObject) {
-//        if self.imageData == nil {
-//            print("Choose an image")
-//        } else {
-//            
-//            let photosRef = REF_STORAGE_IMAGES
-//            let username = "test"
-//            DataService.instance.REF_USERNAMES.queryOrderedByKey().observeSingleEventOfType(.Value, withBlock: { (snapshot) in
-//                let refUser = DataService.instance.REF_USERNAMES.child(username)
-//            })
-//            
+    @IBAction func doneBtnDidTouch(sender: AnyObject) {
+        if self.imageData == nil {
+            print("Choose an image")
+        } else {
+            
+            let photosRef = REF_STORAGE_IMAGES
+            
+            let username = "test"
+
+            let refUser = DataService.instance.REF_USERNAMES.child(username)
+            refUser.queryOrderedByKey().observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+                if snapshot.value is NSNull {
+                    print("image null")
+                } else {
+                    print("found user's image storage location")
+                }
+            })
+            print(refUser)
+            
+            
+
+            
+//            let userPhotoRef = photosRef.child(uid).child("profile_picture.jpeg")
+            
+            
 //            let photoRef = photosRef.child("\(uid)\(NSUUID().UUIDString).jpeg")
-//            
-//            // Upload file to Firebase Storage
+            
+            // Upload file to Firebase Storage
 //            let metadata = FIRStorageMetadata()
 //            metadata.contentType = "image/jpeg"
 //            
-//            let uploadTask = photoRef.child(key).(uid).putData(imageData, metadata: metadata)
+//            let uploadTask = userPhotoRef.child(key).(uid).putData(imageData, metadata: metadata)
 //            
 //            uploadTask.observeStatus(.Progress, handler: { (snapshot) in
 //                // Upload reported progress
@@ -79,11 +93,11 @@ class NewImageVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
 //                }
 //                
 //            }
-//            
-//        }
-//        
-//
-//    }
+            
+        }
+        
+
+    }
     
     @IBAction func btnUploadDidTouch(sender: AnyObject) {
         let libraryViewController = CameraViewController.imagePickerViewController(croppingEnabled) { image, asset in
