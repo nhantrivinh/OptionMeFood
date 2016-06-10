@@ -67,12 +67,14 @@ class DataService {
         REF_UIDS.child(uid).updateChildValues(user)
     }
     
-    func createFirebaseUsername(username: String, uid: Dictionary<String, AnyObject>) {
-        REF_USERNAMES.child(username).updateChildValues(uid)
-    }
-    
-//    func createFirebaseUsername(username: Dictionary<String, AnyObject>) {
-//        REF_USERNAMES.updateChildValues(username)
+//    func createFirebaseUsername(username: String, uid: Dictionary<String, AnyObject>) {
+//        REF_USERNAMES.child(username).updateChildValues(uid)
 //    }
+    
+    
+    //Original
+    func createFirebaseUsername(username: Dictionary<String, AnyObject>) {
+        REF_USERNAMES.updateChildValues(username)
+    }
     
 }

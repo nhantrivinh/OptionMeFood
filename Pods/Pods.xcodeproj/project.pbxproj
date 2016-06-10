@@ -7,126 +7,238 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		71B4C5E101303CC888E335F49385128D /* Pods-OptionMeFood-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEAD857F4FCC209F9F6CB91A2848FCCD /* Pods-OptionMeFood-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDCB91A12FB8ECD58667F34AB546DA21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		EEB24665DED6971FD387E62BF9CCF840 /* Pods-OptionMeFood-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B61136BB1D949081363E0FEED0DD18D4 /* Pods-OptionMeFood-dummy.m */; };
+		093E724BAAE245FB7F7304E8663F9668 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59AC356F9F80FE0EB6154116C4BCD16 /* UIButtonExtensions.swift */; };
+		0CB770CD249FAA5736ECD96141497AE2 /* SingleImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39EDACE93D8C43349A8403A6E996E3D /* SingleImageSaver.swift */; };
+		118DE5355C8C4BC5EBB1C2034E7CC058 /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7CC344394D34CFD7341A4FC572AF73 /* VolumeControl.swift */; };
+		184488E443B6D2A85DA45AD3D21245B1 /* CameraGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A448B4BE4C919206B57B6EA848B18FE0 /* CameraGlobals.swift */; };
+		18E618CB94EA762B27172EB390F7B5B7 /* Pods-OptionMeFood-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B61136BB1D949081363E0FEED0DD18D4 /* Pods-OptionMeFood-dummy.m */; };
+		1D1FE38C62B9D2AD8E29A04949DD1C6F /* SingleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D5A306BC08F03C67EA002C5850B9F4 /* SingleImageFetcher.swift */; };
+		21B9C65EB3542F7DF279B8090F165EBD /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69B7093D36971986D54E33CB1D58106 /* UIViewExtensions.swift */; };
+		29880E5ABF060C5BD17C0606DBE10D7B /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E639997D1E776DAACF86BC92C6E024 /* ImageFetcher.swift */; };
+		32ACAD182A9C90C563170CF45CC65A5C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BAD3EDC6EAAB50FEA2BDEF759B210F /* CameraViewController.swift */; };
+		3AB8980724808427937EC099A399DF0E /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B913DD089370B94C55838C69D48036 /* ImageCell.swift */; };
+		3F700A2F14CBAB017DAB95780531BDEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		45E1DF3AA2D60E7402D56EE637898FF6 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03279F737836F9046AE9EB69847380F /* ConfirmViewController.swift */; };
+		4C115F1FF41B66803D010883277F87E2 /* CameraViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6AFCFF12FE0587C7B37F4B4CE38555 /* CameraViewAssets.xcassets */; };
+		571340FD7CCFE8BAC3A2F08E0CD9CED5 /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC550793A8A3535ED802A597F7D9515 /* PhotoLibraryViewController.swift */; };
+		705D53790CC8B18997358B20F268F7F3 /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734825C7413C7808E95805FC98EB1180 /* CropOverlay.swift */; };
+		728A45B8B971047BDB308AE2141F3DC8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23EEF3E6B8FF06F75C0D0F71E69A1D5 /* Utilities.swift */; };
+		79A19228C1166CE5B1D5E857B2F94173 /* ALCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A4334EC1D62F2AE2FD55D7AA14359 /* ALCameraViewController-dummy.m */; };
+		8F4A966830ABFC9639F5250B2AE9DF7B /* CameraShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6397200A5012E77196B712F5A16FF /* CameraShot.swift */; };
+		A940E8F9C140B8C66EFF4D1483297520 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5F6349F70527E6DEF006DB3FCB1C6 /* CameraView.swift */; };
+		B3AB8B9A6BF3D7C6AD248D750C4AF3DA /* CameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3635C880185BE09A344B309F0F4678F9 /* CameraView.strings */; };
+		B792160E0DF8BABD00BA2D01D992572E /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9577B862335359B27A9D9680882C3 /* PhotoLibraryAuthorizer.swift */; };
+		C89510EA5D1CC7FF413E58C555096673 /* Pods-OptionMeFood-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEAD857F4FCC209F9F6CB91A2848FCCD /* Pods-OptionMeFood-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D949A968AD3CDC949C94394BDFD02B65 /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080C85D50C569920EA65D8FC29C499D4 /* ConfirmViewController.xib */; };
+		E2560A7275A61939751F09B8163EBA16 /* CameraViewControllerConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7361FF8E4A414D1C4DAA8FB79F44E02F /* CameraViewControllerConstraint.swift */; };
+		E5F334E181A8EDCE0B0CE084957957A7 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0843828151F6DFEDF69CF533992A7DA /* PermissionsView.swift */; };
+		F3224858C13E9A856221115004589F58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F3ED4024EBF978156D113F80A7792AC7 /* ALCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDDB5707C7C5414642E14A81496A70A4 /* ALCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0B878DAD4898E87C3D0F05841D40B108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAEFE5845A9A47287B43BE713DFD4B08;
+			remoteInfo = ALCameraViewController;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0A5B5E976E3F5E86F457472EB98C97E1 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppUtilities.framework; path = Frameworks/GoogleAppUtilities.framework; sourceTree = "<group>"; };
-		0D070082BFCB5F8FB43046440289CB9E /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		178F9451FB50A1356B11597D8CCBD51F /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
-		1B0CF512F718E03CCD1D9F53D2F6C8D9 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		1F14E48CF148802E6BB9C84F098D72B3 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
-		22D6B1F841ADA56CC84FBCE004A06981 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Frameworks/FirebaseMessaging.framework; sourceTree = "<group>"; };
+		080C85D50C569920EA65D8FC29C499D4 /* ConfirmViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ConfirmViewController.xib; path = ALCameraViewController/ViewController/ConfirmViewController.xib; sourceTree = "<group>"; };
+		09673BD510CAA3B1677C3C45BFF19212 /* FIRMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessaging.h; path = Headers/Public/FIRMessaging.h; sourceTree = "<group>"; };
+		0B6AFCFF12FE0587C7B37F4B4CE38555 /* CameraViewAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = CameraViewAssets.xcassets; path = ALCameraViewController/CameraViewAssets.xcassets; sourceTree = "<group>"; };
+		12D5A306BC08F03C67EA002C5850B9F4 /* SingleImageFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleImageFetcher.swift; path = ALCameraViewController/Utilities/SingleImageFetcher.swift; sourceTree = "<group>"; };
+		20071115A610EE9BEB93CDEDAB5F302B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2534E0420C09E7AB75DAB8993BFB4701 /* Pods-OptionMeFood-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OptionMeFood-acknowledgements.plist"; sourceTree = "<group>"; };
+		2921FFAA4C3976416527113093B8161A /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppUtilities.framework; path = Frameworks/GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		2AC6397200A5012E77196B712F5A16FF /* CameraShot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraShot.swift; path = ALCameraViewController/Utilities/CameraShot.swift; sourceTree = "<group>"; };
+		2ACED8FBF990E02C8873EE9A0C599E59 /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleIPhoneUtilities.framework; path = Frameworks/GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
+		2D7A4334EC1D62F2AE2FD55D7AA14359 /* ALCameraViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALCameraViewController-dummy.m"; sourceTree = "<group>"; };
 		334A7FE6F0CD8737E14802B121E202D3 /* Pods-OptionMeFood.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OptionMeFood.modulemap"; sourceTree = "<group>"; };
-		47AA8D2698F7132A777C7580670E01BC /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleIPhoneUtilities.framework; path = Frameworks/GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
-		493F23DA49C454E5999C946429BD79B6 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		4DF0F2D017D5C527887382CADB20C389 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
-		54C71E311CB7E4A430A97694A0E8213C /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		3635C880185BE09A344B309F0F4678F9 /* CameraView.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = CameraView.strings; path = ALCameraViewController/CameraView.strings; sourceTree = "<group>"; };
+		3CAB18AA6E709737EFCB7FF3C09C37C6 /* ALCameraViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALCameraViewController.xcconfig; sourceTree = "<group>"; };
+		44D2A2EABB42AF8E653E7A6FD5ED3086 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		4C511E5143E59881F45EFC99E519ACE0 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
+		4EF982EE5DBE05AC9F34EFCD8D991365 /* ALCameraViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALCameraViewController-prefix.pch"; sourceTree = "<group>"; };
+		5997B5B7EC9EE56E28CEA203C0DBDBC1 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		5D6147E5B3AEBF6E6EF59226333BC2C7 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
 		5E33F09B943FA4B141C08F7D0907664A /* Pods-OptionMeFood-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OptionMeFood-frameworks.sh"; sourceTree = "<group>"; };
+		70A97A5E059FCCAD292A17BBE41C8CEF /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Frameworks/FirebaseMessaging.framework; sourceTree = "<group>"; };
+		734825C7413C7808E95805FC98EB1180 /* CropOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropOverlay.swift; path = ALCameraViewController/Views/CropOverlay.swift; sourceTree = "<group>"; };
+		7361FF8E4A414D1C4DAA8FB79F44E02F /* CameraViewControllerConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewControllerConstraint.swift; path = ALCameraViewController/ViewController/CameraViewControllerConstraint.swift; sourceTree = "<group>"; };
 		75B5B0D81D07FBD2D77C074B030F0F9D /* Pods-OptionMeFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OptionMeFood.release.xcconfig"; sourceTree = "<group>"; };
-		91A3E6B98E80192886C2888673695828 /* FIRMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessaging.h; path = Headers/Public/FIRMessaging.h; sourceTree = "<group>"; };
+		79B52B37AAD4E9BAFFBFC517CDECEBA5 /* Pods_OptionMeFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OptionMeFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79B5F6349F70527E6DEF006DB3FCB1C6 /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = ALCameraViewController/Views/CameraView.swift; sourceTree = "<group>"; };
+		7F25E4AF0FCCF0C978761DAFE3D21FBA /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		92347596B7097332D1D5AFCB6AE0366A /* ALCameraViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ALCameraViewController.modulemap; sourceTree = "<group>"; };
+		92C8A9F4D6BDC2DC62FA348C93B88530 /* ALCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CE9577B862335359B27A9D9680882C3 /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoLibraryAuthorizer.swift; path = ALCameraViewController/Utilities/PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
+		9E7CC344394D34CFD7341A4FC572AF73 /* VolumeControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VolumeControl.swift; path = ALCameraViewController/Utilities/VolumeControl.swift; sourceTree = "<group>"; };
+		A03279F737836F9046AE9EB69847380F /* ConfirmViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmViewController.swift; path = ALCameraViewController/ViewController/ConfirmViewController.swift; sourceTree = "<group>"; };
 		A0476C0E71D3DE5B26893AD629D31281 /* Pods-OptionMeFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OptionMeFood.debug.xcconfig"; sourceTree = "<group>"; };
-		A30D100D0F2B7F07A6C297B2A8DCAB68 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		A44876579BBC2918451173CA5753F144 /* GoogleAuthUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAuthUtilities.framework; path = Frameworks/GoogleAuthUtilities.framework; sourceTree = "<group>"; };
+		A0BAD3EDC6EAAB50FEA2BDEF759B210F /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ALCameraViewController/ViewController/CameraViewController.swift; sourceTree = "<group>"; };
+		A23EEF3E6B8FF06F75C0D0F71E69A1D5 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ALCameraViewController/Utilities/Utilities.swift; sourceTree = "<group>"; };
+		A39EDACE93D8C43349A8403A6E996E3D /* SingleImageSaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleImageSaver.swift; path = ALCameraViewController/Utilities/SingleImageSaver.swift; sourceTree = "<group>"; };
+		A448B4BE4C919206B57B6EA848B18FE0 /* CameraGlobals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraGlobals.swift; path = ALCameraViewController/Utilities/CameraGlobals.swift; sourceTree = "<group>"; };
+		AE8F851517366F3AC28F47066D1EC63B /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		AEAD857F4FCC209F9F6CB91A2848FCCD /* Pods-OptionMeFood-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OptionMeFood-umbrella.h"; sourceTree = "<group>"; };
-		B3FA82BE08DF2B2837F6ACD0AC4240E4 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
-		B46AF61814F33AE9F750C6CC0AFFD201 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
+		B328AAC8F731E61518FEDBEBD3C36A55 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
+		B4B913DD089370B94C55838C69D48036 /* ImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCell.swift; path = ALCameraViewController/Views/ImageCell.swift; sourceTree = "<group>"; };
+		B59AC356F9F80FE0EB6154116C4BCD16 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButtonExtensions.swift; path = ALCameraViewController/Utilities/UIButtonExtensions.swift; sourceTree = "<group>"; };
 		B61136BB1D949081363E0FEED0DD18D4 /* Pods-OptionMeFood-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OptionMeFood-dummy.m"; sourceTree = "<group>"; };
 		B665B2B54F7C7636DA18102A8E03AD6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69B7093D36971986D54E33CB1D58106 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = ALCameraViewController/Utilities/UIViewExtensions.swift; sourceTree = "<group>"; };
 		BD379C388384FDAA71A3B8D3B0187608 /* Pods-OptionMeFood-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OptionMeFood-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DEFB804DE8765FEE9B16F5237AECA272 /* Pods_OptionMeFood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OptionMeFood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E541151BB33896F0100DC0CC66082510 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
-		E84FD6908F1D549C1C365C1AE9280289 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
-		ED83DC665FF0377D06A8B5698BC21839 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		CF6BA98F69BF6EE10EF5710C35C9DD79 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		D0843828151F6DFEDF69CF533992A7DA /* PermissionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionsView.swift; path = ALCameraViewController/Views/PermissionsView.swift; sourceTree = "<group>"; };
+		D38BA4A69A6AB2325BDF1E52432A6119 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		DBC550793A8A3535ED802A597F7D9515 /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoLibraryViewController.swift; path = ALCameraViewController/ViewController/PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		E0E639997D1E776DAACF86BC92C6E024 /* ImageFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFetcher.swift; path = ALCameraViewController/Utilities/ImageFetcher.swift; sourceTree = "<group>"; };
+		EC05A7A7AE2FFB7928CE945AB411A34A /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		ECB457714CAD2CA99A40AAE74185F6AD /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		EDC1F62976DEE08B515783DCAB6A5CE1 /* GoogleAuthUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAuthUtilities.framework; path = Frameworks/GoogleAuthUtilities.framework; sourceTree = "<group>"; };
+		EDDB5707C7C5414642E14A81496A70A4 /* ALCameraViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALCameraViewController-umbrella.h"; sourceTree = "<group>"; };
 		EDF2944A870B1455E3D65A5F35D1CCE6 /* Pods-OptionMeFood-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OptionMeFood-resources.sh"; sourceTree = "<group>"; };
+		F4D947EDA0A76E73850ECF7954EF4437 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		FE8933076F44C39607CB7A415C1B3492 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7CAD69902DFED591F7FADB55DAFAAAEE /* Frameworks */ = {
+		2871B2BFCF490A1D3B05130A7F766848 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDCB91A12FB8ECD58667F34AB546DA21 /* Foundation.framework in Frameworks */,
+				3F700A2F14CBAB017DAB95780531BDEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB983556107C499C6EAAA92E50EFA44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3224858C13E9A856221115004589F58 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03824B2F118B61A6E0EDC7410F0AE9A4 /* Analytics */ = {
+		01111486849CE79C5DD9C66A4879346A /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				E541151BB33896F0100DC0CC66082510 /* Firebase.h */,
+				275B1C3D70FB6EEC92DFC2100BC16712 /* Analytics */,
 			);
-			name = Analytics;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
-		0C1A10C217E93A962CCADE8B8839121B /* FirebaseMessaging */ = {
+		10FE579829705BB68BC49B3597BC99A2 /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				91A3E6B98E80192886C2888673695828 /* FIRMessaging.h */,
-				D7F40D7FB7F778A4F3DA3A7222DA8594 /* Frameworks */,
+				36EBD27D219026F23B756CCEDC64CFC6 /* Frameworks */,
 			);
-			path = FirebaseMessaging;
+			path = GoogleSymbolUtilities;
 			sourceTree = "<group>";
 		};
-		0D4ABB9BC61A78B13FB056B641AD0EB4 /* GoogleAppUtilities */ = {
+		11C9B4FABC363B026ED6101449F57473 /* GoogleInterchangeUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				88FE9379273E29C576C0D1E650854B0D /* Frameworks */,
+				396E422D417928CEE299951405DBF85D /* Frameworks */,
 			);
-			path = GoogleAppUtilities;
+			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
-		11BA6A5728CBB846F73436EB0A8CD91C /* FirebaseStorage */ = {
+		1244B16A3D210D52D0C760754D25AF79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8CCE4F2478DDFE9C72E32B216B1B22C4 /* Frameworks */,
-			);
-			path = FirebaseStorage;
-			sourceTree = "<group>";
-		};
-		13611A07BF11C543CC085892593DE0D7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E84FD6908F1D549C1C365C1AE9280289 /* GoogleSignIn.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		1BD1C84CF8F6A44E094643D45BC10440 /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				32D88EBC61A9287B2FF0394C84D7AEEC /* Frameworks */,
-			);
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		2098F1D3274DF5DD1D7A6999B11B5589 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1B0CF512F718E03CCD1D9F53D2F6C8D9 /* GoogleUtilities.framework */,
+				2ACED8FBF990E02C8873EE9A0C599E59 /* GoogleIPhoneUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2CF012A0B89B76647543603C4F68C079 /* GoogleAuthUtilities */ = {
+		18A43CE063AB7056BBDBF3B88AA31839 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9C85E61159F82ECA8F59FE5146D074B9 /* Frameworks */,
+				EC05A7A7AE2FFB7928CE945AB411A34A /* GoogleUtilities.framework */,
 			);
-			path = GoogleAuthUtilities;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		32D88EBC61A9287B2FF0394C84D7AEEC /* Frameworks */ = {
+		227FA9CE1E688239F7C1F184756A1EC4 /* ALCameraViewController */ = {
 			isa = PBXGroup;
 			children = (
-				54C71E311CB7E4A430A97694A0E8213C /* FirebaseAnalytics.framework */,
+				A448B4BE4C919206B57B6EA848B18FE0 /* CameraGlobals.swift */,
+				2AC6397200A5012E77196B712F5A16FF /* CameraShot.swift */,
+				79B5F6349F70527E6DEF006DB3FCB1C6 /* CameraView.swift */,
+				A0BAD3EDC6EAAB50FEA2BDEF759B210F /* CameraViewController.swift */,
+				7361FF8E4A414D1C4DAA8FB79F44E02F /* CameraViewControllerConstraint.swift */,
+				A03279F737836F9046AE9EB69847380F /* ConfirmViewController.swift */,
+				734825C7413C7808E95805FC98EB1180 /* CropOverlay.swift */,
+				B4B913DD089370B94C55838C69D48036 /* ImageCell.swift */,
+				E0E639997D1E776DAACF86BC92C6E024 /* ImageFetcher.swift */,
+				D0843828151F6DFEDF69CF533992A7DA /* PermissionsView.swift */,
+				9CE9577B862335359B27A9D9680882C3 /* PhotoLibraryAuthorizer.swift */,
+				DBC550793A8A3535ED802A597F7D9515 /* PhotoLibraryViewController.swift */,
+				12D5A306BC08F03C67EA002C5850B9F4 /* SingleImageFetcher.swift */,
+				A39EDACE93D8C43349A8403A6E996E3D /* SingleImageSaver.swift */,
+				B59AC356F9F80FE0EB6154116C4BCD16 /* UIButtonExtensions.swift */,
+				B69B7093D36971986D54E33CB1D58106 /* UIViewExtensions.swift */,
+				A23EEF3E6B8FF06F75C0D0F71E69A1D5 /* Utilities.swift */,
+				9E7CC344394D34CFD7341A4FC572AF73 /* VolumeControl.swift */,
+				C184081E1DD846706D430DA956392AD8 /* Resources */,
+				6E5B5CC56B2FED80BC481A536D8C70A1 /* Support Files */,
+			);
+			path = ALCameraViewController;
+			sourceTree = "<group>";
+		};
+		275B1C3D70FB6EEC92DFC2100BC16712 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				CF6BA98F69BF6EE10EF5710C35C9DD79 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		27D1BBF5926906EB8B06A67D60270711 /* GoogleIPhoneUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1244B16A3D210D52D0C760754D25AF79 /* Frameworks */,
+			);
+			path = GoogleIPhoneUtilities;
+			sourceTree = "<group>";
+		};
+		33313C665A7B16D748C33C63E889332F /* FirebaseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				CA84BBD849FCAA881629AD2775E31C70 /* Frameworks */,
+			);
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+		3690989A733985F7F0B4C67E79156697 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				D76EACD0E15A99FFCC898F6B4894CE07 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		36EBD27D219026F23B756CCEDC64CFC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE8F851517366F3AC28F47066D1EC63B /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		396E422D417928CEE299951405DBF85D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5997B5B7EC9EE56E28CEA203C0DBDBC1 /* GoogleInterchangeUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,35 +251,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4060DFD8E61AE529A59844C0D10AAFD5 /* GoogleSignIn */ = {
+		41C731D9648AC265F80C3EFA4AA923C0 /* GoogleNetworkingUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				5326E2866B684D73EA2A55E7995C4956 /* Frameworks */,
-				13611A07BF11C543CC085892593DE0D7 /* Resources */,
+				AC022421BB2E24CFD4E1C1F586BED153 /* Frameworks */,
 			);
-			path = GoogleSignIn;
+			path = GoogleNetworkingUtilities;
 			sourceTree = "<group>";
 		};
-		464373D2FDCB688E39AF0D13F6DB2411 /* GoogleIPhoneUtilities */ = {
+		43BB591E67F76C27549F7A77D49ADEA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F8A4EB540CD7E1D888635D6847D6BFBD /* Frameworks */,
-			);
-			path = GoogleIPhoneUtilities;
-			sourceTree = "<group>";
-		};
-		4FE04AA5CB3DACCD368E5D8D4D351ED3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				493F23DA49C454E5999C946429BD79B6 /* GoogleSymbolUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5326E2866B684D73EA2A55E7995C4956 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B46AF61814F33AE9F750C6CC0AFFD201 /* GoogleSignIn.framework */,
+				EDC1F62976DEE08B515783DCAB6A5CE1 /* GoogleAuthUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,28 +275,26 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7284BD8069288AC5A0D3F0B4EB4142C9 /* GoogleSymbolUtilities */ = {
+		626A54AD1285E0C1C33FD1F911334464 /* GoogleAppUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				4FE04AA5CB3DACCD368E5D8D4D351ED3 /* Frameworks */,
+				C52BD3A091B8293139B37BA6DA6464B6 /* Frameworks */,
 			);
-			path = GoogleSymbolUtilities;
+			path = GoogleAppUtilities;
 			sourceTree = "<group>";
 		};
-		788442DC31112593064E12B0734478BB /* GoogleUtilities */ = {
+		6E5B5CC56B2FED80BC481A536D8C70A1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2098F1D3274DF5DD1D7A6999B11B5589 /* Frameworks */,
+				92347596B7097332D1D5AFCB6AE0366A /* ALCameraViewController.modulemap */,
+				3CAB18AA6E709737EFCB7FF3C09C37C6 /* ALCameraViewController.xcconfig */,
+				2D7A4334EC1D62F2AE2FD55D7AA14359 /* ALCameraViewController-dummy.m */,
+				4EF982EE5DBE05AC9F34EFCD8D991365 /* ALCameraViewController-prefix.pch */,
+				EDDB5707C7C5414642E14A81496A70A4 /* ALCameraViewController-umbrella.h */,
+				20071115A610EE9BEB93CDEDAB5F302B /* Info.plist */,
 			);
-			path = GoogleUtilities;
-			sourceTree = "<group>";
-		};
-		7AC9885F028EA00EF5D14D171399BD84 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DEFB804DE8765FEE9B16F5237AECA272 /* Pods_OptionMeFood.framework */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/ALCameraViewController";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -209,89 +302,74 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FC59035C6BDA226CE8621E3C9868D025 /* Pods */,
-				7AC9885F028EA00EF5D14D171399BD84 /* Products */,
+				F91F13A07572FE11D4DCF48C5607C3A5 /* Pods */,
+				AEE89837E677A53A953AA7CEA1F248F1 /* Products */,
 				5D45279E59148335A4A96E8E57935121 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		847C8D47F3D32E6CF1A8DDD1F53D78FA /* Frameworks */ = {
+		81A82A3E07206E07EF3E29E00501134A /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				0D070082BFCB5F8FB43046440289CB9E /* FirebaseDatabase.framework */,
+				18A43CE063AB7056BBDBF3B88AA31839 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		8249B9B67A7BE25D36816FE9F77362D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECB457714CAD2CA99A40AAE74185F6AD /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		879C75CE6C250E89086C2C1117F9722B /* Frameworks */ = {
+		9C1D67C6F567D80CB66FB06F0F980640 /* FirebaseAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				A30D100D0F2B7F07A6C297B2A8DCAB68 /* GoogleInterchangeUtilities.framework */,
+				B7E21DABE16285B7BF262F8AB6A91506 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		A97FEAE8850782CD7D315EF7FB7EB54A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B328AAC8F731E61518FEDBEBD3C36A55 /* GoogleSignIn.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AC022421BB2E24CFD4E1C1F586BED153 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE8933076F44C39607CB7A415C1B3492 /* GoogleNetworkingUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		88FE9379273E29C576C0D1E650854B0D /* Frameworks */ = {
+		AEE89837E677A53A953AA7CEA1F248F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A5B5E976E3F5E86F457472EB98C97E1 /* GoogleAppUtilities.framework */,
+				92C8A9F4D6BDC2DC62FA348C93B88530 /* ALCameraViewController.framework */,
+				79B52B37AAD4E9BAFFBFC517CDECEBA5 /* Pods_OptionMeFood.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		8C84A3084FFFB08EF970715477857ECC /* GoogleNetworkingUtilities */ = {
+		B4EEA463C3DB69E27F567D3AD9816187 /* FirebaseMessaging */ = {
 			isa = PBXGroup;
 			children = (
-				9CCA735DFAF07D29FCC0A922DEFEBD97 /* Frameworks */,
+				09673BD510CAA3B1677C3C45BFF19212 /* FIRMessaging.h */,
+				E4A8F0D0AD1C21810CDCF7D0E0B29D6B /* Frameworks */,
 			);
-			path = GoogleNetworkingUtilities;
+			path = FirebaseMessaging;
 			sourceTree = "<group>";
 		};
-		8CCE4F2478DDFE9C72E32B216B1B22C4 /* Frameworks */ = {
+		B7E21DABE16285B7BF262F8AB6A91506 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F14E48CF148802E6BB9C84F098D72B3 /* FirebaseStorage.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9C85E61159F82ECA8F59FE5146D074B9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A44876579BBC2918451173CA5753F144 /* GoogleAuthUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9CCA735DFAF07D29FCC0A922DEFEBD97 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B3FA82BE08DF2B2837F6ACD0AC4240E4 /* GoogleNetworkingUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AD05547423E76771A83FC79E2D7EFD6D /* FirebaseInstanceID */ = {
-			isa = PBXGroup;
-			children = (
-				178F9451FB50A1356B11597D8CCBD51F /* FIRInstanceID.h */,
-				BA5E5E33A2A136EA4DB2C5E6400FFF33 /* Frameworks */,
-			);
-			path = FirebaseInstanceID;
-			sourceTree = "<group>";
-		};
-		B27250B421F2ED7DDC49822C6C896726 /* FirebaseDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				847C8D47F3D32E6CF1A8DDD1F53D78FA /* Frameworks */,
-			);
-			path = FirebaseDatabase;
-			sourceTree = "<group>";
-		};
-		BA5E5E33A2A136EA4DB2C5E6400FFF33 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ED83DC665FF0377D06A8B5698BC21839 /* FirebaseInstanceID.framework */,
+				7F25E4AF0FCCF0C978761DAFE3D21FBA /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -304,34 +382,60 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C69B6C72D98ADF40C82DCBFF9546B313 /* FirebaseAuth */ = {
+		C184081E1DD846706D430DA956392AD8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D79DC2035376710B348996632179EB11 /* Frameworks */,
+				3635C880185BE09A344B309F0F4678F9 /* CameraView.strings */,
+				0B6AFCFF12FE0587C7B37F4B4CE38555 /* CameraViewAssets.xcassets */,
+				080C85D50C569920EA65D8FC29C499D4 /* ConfirmViewController.xib */,
 			);
-			path = FirebaseAuth;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		D3CBF21086FC56080F0F5424517D7D52 /* Firebase */ = {
+		C52BD3A091B8293139B37BA6DA6464B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				03824B2F118B61A6E0EDC7410F0AE9A4 /* Analytics */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		D79DC2035376710B348996632179EB11 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4DF0F2D017D5C527887382CADB20C389 /* FirebaseAuth.framework */,
+				2921FFAA4C3976416527113093B8161A /* GoogleAppUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7F40D7FB7F778A4F3DA3A7222DA8594 /* Frameworks */ = {
+		CA84BBD849FCAA881629AD2775E31C70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22D6B1F841ADA56CC84FBCE004A06981 /* FirebaseMessaging.framework */,
+				5D6147E5B3AEBF6E6EF59226333BC2C7 /* FirebaseStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE38759B15C55F1E72BED54BB4E58DFA /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				FFCABE62C80B03DDAFE51E0887E04F83 /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		D0BF91E93BCC2C09D781927DE4567DFD /* GoogleAuthUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				43BB591E67F76C27549F7A77D49ADEA0 /* Frameworks */,
+			);
+			path = GoogleAuthUtilities;
+			sourceTree = "<group>";
+		};
+		D76EACD0E15A99FFCC898F6B4894CE07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D38BA4A69A6AB2325BDF1E52432A6119 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4A8F0D0AD1C21810CDCF7D0E0B29D6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70A97A5E059FCCAD292A17BBE41C8CEF /* FirebaseMessaging.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -354,73 +458,119 @@
 			path = "Target Support Files/Pods-OptionMeFood";
 			sourceTree = "<group>";
 		};
-		F6035F31E6B04F21685086A0D06F4179 /* GoogleInterchangeUtilities */ = {
+		F91F13A07572FE11D4DCF48C5607C3A5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				879C75CE6C250E89086C2C1117F9722B /* Frameworks */,
+				227FA9CE1E688239F7C1F184756A1EC4 /* ALCameraViewController */,
+				01111486849CE79C5DD9C66A4879346A /* Firebase */,
+				9C1D67C6F567D80CB66FB06F0F980640 /* FirebaseAnalytics */,
+				CE38759B15C55F1E72BED54BB4E58DFA /* FirebaseAuth */,
+				3690989A733985F7F0B4C67E79156697 /* FirebaseDatabase */,
+				FF3B726B4A04B38151B237EBB818C6E2 /* FirebaseInstanceID */,
+				B4EEA463C3DB69E27F567D3AD9816187 /* FirebaseMessaging */,
+				33313C665A7B16D748C33C63E889332F /* FirebaseStorage */,
+				626A54AD1285E0C1C33FD1F911334464 /* GoogleAppUtilities */,
+				D0BF91E93BCC2C09D781927DE4567DFD /* GoogleAuthUtilities */,
+				11C9B4FABC363B026ED6101449F57473 /* GoogleInterchangeUtilities */,
+				27D1BBF5926906EB8B06A67D60270711 /* GoogleIPhoneUtilities */,
+				41C731D9648AC265F80C3EFA4AA923C0 /* GoogleNetworkingUtilities */,
+				F9D711C60D3FD5057D57A5CFD6093555 /* GoogleSignIn */,
+				10FE579829705BB68BC49B3597BC99A2 /* GoogleSymbolUtilities */,
+				81A82A3E07206E07EF3E29E00501134A /* GoogleUtilities */,
 			);
-			path = GoogleInterchangeUtilities;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		F8A4EB540CD7E1D888635D6847D6BFBD /* Frameworks */ = {
+		F9D711C60D3FD5057D57A5CFD6093555 /* GoogleSignIn */ = {
 			isa = PBXGroup;
 			children = (
-				47AA8D2698F7132A777C7580670E01BC /* GoogleIPhoneUtilities.framework */,
+				FCBFC0FD6FD742BFCA2C46CD7CB1FD9C /* Frameworks */,
+				A97FEAE8850782CD7D315EF7FB7EB54A /* Resources */,
+			);
+			path = GoogleSignIn;
+			sourceTree = "<group>";
+		};
+		FCBFC0FD6FD742BFCA2C46CD7CB1FD9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C511E5143E59881F45EFC99E519ACE0 /* GoogleSignIn.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FC59035C6BDA226CE8621E3C9868D025 /* Pods */ = {
+		FF3B726B4A04B38151B237EBB818C6E2 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				D3CBF21086FC56080F0F5424517D7D52 /* Firebase */,
-				1BD1C84CF8F6A44E094643D45BC10440 /* FirebaseAnalytics */,
-				C69B6C72D98ADF40C82DCBFF9546B313 /* FirebaseAuth */,
-				B27250B421F2ED7DDC49822C6C896726 /* FirebaseDatabase */,
-				AD05547423E76771A83FC79E2D7EFD6D /* FirebaseInstanceID */,
-				0C1A10C217E93A962CCADE8B8839121B /* FirebaseMessaging */,
-				11BA6A5728CBB846F73436EB0A8CD91C /* FirebaseStorage */,
-				0D4ABB9BC61A78B13FB056B641AD0EB4 /* GoogleAppUtilities */,
-				2CF012A0B89B76647543603C4F68C079 /* GoogleAuthUtilities */,
-				F6035F31E6B04F21685086A0D06F4179 /* GoogleInterchangeUtilities */,
-				464373D2FDCB688E39AF0D13F6DB2411 /* GoogleIPhoneUtilities */,
-				8C84A3084FFFB08EF970715477857ECC /* GoogleNetworkingUtilities */,
-				4060DFD8E61AE529A59844C0D10AAFD5 /* GoogleSignIn */,
-				7284BD8069288AC5A0D3F0B4EB4142C9 /* GoogleSymbolUtilities */,
-				788442DC31112593064E12B0734478BB /* GoogleUtilities */,
+				F4D947EDA0A76E73850ECF7954EF4437 /* FIRInstanceID.h */,
+				8249B9B67A7BE25D36816FE9F77362D3 /* Frameworks */,
 			);
-			name = Pods;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		FFCABE62C80B03DDAFE51E0887E04F83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D2A2EABB42AF8E653E7A6FD5ED3086 /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		613761E223045D12EEB3FD351E2EC947 /* Headers */ = {
+		0AEA7BB6556C422441FF9C8E306B6C7F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71B4C5E101303CC888E335F49385128D /* Pods-OptionMeFood-umbrella.h in Headers */,
+				C89510EA5D1CC7FF413E58C555096673 /* Pods-OptionMeFood-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F0072FB810A75EB524F7FD9B6D2A9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3ED4024EBF978156D113F80A7792AC7 /* ALCameraViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		51340F2372260F68EBA80018550726D2 /* Pods-OptionMeFood */ = {
+		38B5F51CA07770ED94B89E4E9C7927F0 /* Pods-OptionMeFood */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5515C06A9BA9AC7AF4D7013C24C6A1E8 /* Build configuration list for PBXNativeTarget "Pods-OptionMeFood" */;
+			buildConfigurationList = 382455A94CB2BAF3CEF09AF399B924BD /* Build configuration list for PBXNativeTarget "Pods-OptionMeFood" */;
 			buildPhases = (
-				20D6EB47FE3A0888355AEFDFF861D798 /* Sources */,
-				7CAD69902DFED591F7FADB55DAFAAAEE /* Frameworks */,
-				613761E223045D12EEB3FD351E2EC947 /* Headers */,
+				BBAEED1960961A9083B9C13EF2099B75 /* Sources */,
+				2871B2BFCF490A1D3B05130A7F766848 /* Frameworks */,
+				0AEA7BB6556C422441FF9C8E306B6C7F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D09B9AA051B082F07A49C5616C56589 /* PBXTargetDependency */,
+			);
+			name = "Pods-OptionMeFood";
+			productName = "Pods-OptionMeFood";
+			productReference = 79B52B37AAD4E9BAFFBFC517CDECEBA5 /* Pods_OptionMeFood.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAEFE5845A9A47287B43BE713DFD4B08 /* ALCameraViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BA2FC259999CD7A5937B0E53E3A19FE /* Build configuration list for PBXNativeTarget "ALCameraViewController" */;
+			buildPhases = (
+				2215D0455CCAFA96257948CD09BB4CAA /* Sources */,
+				5CB983556107C499C6EAAA92E50EFA44 /* Frameworks */,
+				46B9EBA864B0B4B79BC7EBBD37C32595 /* Resources */,
+				E8F0072FB810A75EB524F7FD9B6D2A9F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-OptionMeFood";
-			productName = "Pods-OptionMeFood";
-			productReference = DEFB804DE8765FEE9B16F5237AECA272 /* Pods_OptionMeFood.framework */;
+			name = ALCameraViewController;
+			productName = ALCameraViewController;
+			productReference = 92C8A9F4D6BDC2DC62FA348C93B88530 /* ALCameraViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -440,34 +590,83 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7AC9885F028EA00EF5D14D171399BD84 /* Products */;
+			productRefGroup = AEE89837E677A53A953AA7CEA1F248F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				51340F2372260F68EBA80018550726D2 /* Pods-OptionMeFood */,
+				DAEFE5845A9A47287B43BE713DFD4B08 /* ALCameraViewController */,
+				38B5F51CA07770ED94B89E4E9C7927F0 /* Pods-OptionMeFood */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		46B9EBA864B0B4B79BC7EBBD37C32595 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3AB8B9A6BF3D7C6AD248D750C4AF3DA /* CameraView.strings in Resources */,
+				4C115F1FF41B66803D010883277F87E2 /* CameraViewAssets.xcassets in Resources */,
+				D949A968AD3CDC949C94394BDFD02B65 /* ConfirmViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		20D6EB47FE3A0888355AEFDFF861D798 /* Sources */ = {
+		2215D0455CCAFA96257948CD09BB4CAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB24665DED6971FD387E62BF9CCF840 /* Pods-OptionMeFood-dummy.m in Sources */,
+				79A19228C1166CE5B1D5E857B2F94173 /* ALCameraViewController-dummy.m in Sources */,
+				184488E443B6D2A85DA45AD3D21245B1 /* CameraGlobals.swift in Sources */,
+				8F4A966830ABFC9639F5250B2AE9DF7B /* CameraShot.swift in Sources */,
+				A940E8F9C140B8C66EFF4D1483297520 /* CameraView.swift in Sources */,
+				32ACAD182A9C90C563170CF45CC65A5C /* CameraViewController.swift in Sources */,
+				E2560A7275A61939751F09B8163EBA16 /* CameraViewControllerConstraint.swift in Sources */,
+				45E1DF3AA2D60E7402D56EE637898FF6 /* ConfirmViewController.swift in Sources */,
+				705D53790CC8B18997358B20F268F7F3 /* CropOverlay.swift in Sources */,
+				3AB8980724808427937EC099A399DF0E /* ImageCell.swift in Sources */,
+				29880E5ABF060C5BD17C0606DBE10D7B /* ImageFetcher.swift in Sources */,
+				E5F334E181A8EDCE0B0CE084957957A7 /* PermissionsView.swift in Sources */,
+				B792160E0DF8BABD00BA2D01D992572E /* PhotoLibraryAuthorizer.swift in Sources */,
+				571340FD7CCFE8BAC3A2F08E0CD9CED5 /* PhotoLibraryViewController.swift in Sources */,
+				1D1FE38C62B9D2AD8E29A04949DD1C6F /* SingleImageFetcher.swift in Sources */,
+				0CB770CD249FAA5736ECD96141497AE2 /* SingleImageSaver.swift in Sources */,
+				093E724BAAE245FB7F7304E8663F9668 /* UIButtonExtensions.swift in Sources */,
+				21B9C65EB3542F7DF279B8090F165EBD /* UIViewExtensions.swift in Sources */,
+				728A45B8B971047BDB308AE2141F3DC8 /* Utilities.swift in Sources */,
+				118DE5355C8C4BC5EBB1C2034E7CC058 /* VolumeControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBAEED1960961A9083B9C13EF2099B75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E618CB94EA762B27172EB390F7B5B7 /* Pods-OptionMeFood-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8D09B9AA051B082F07A49C5616C56589 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ALCameraViewController;
+			target = DAEFE5845A9A47287B43BE713DFD4B08 /* ALCameraViewController */;
+			targetProxy = 0B878DAD4898E87C3D0F05841D40B108 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		2089F67202D00ACD9A6F87AFAC18307D /* Debug */ = {
+		36C6D33F18D0CE5110E1CA22620DE416 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0476C0E71D3DE5B26893AD629D31281 /* Pods-OptionMeFood.debug.xcconfig */;
+			baseConfigurationReference = 75B5B0D81D07FBD2D77C074B030F0F9D /* Pods-OptionMeFood.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -480,7 +679,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-OptionMeFood/Pods-OptionMeFood.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -492,7 +691,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -536,6 +735,99 @@
 			};
 			name = Debug;
 		};
+		5311AF5C1375D3127103CEBAE164AB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAB18AA6E709737EFCB7FF3C09C37C6 /* ALCameraViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ALCameraViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F853CA4451DD26A1A3DB1C25AEACF95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAB18AA6E709737EFCB7FF3C09C37C6 /* ALCameraViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ALCameraViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A721A6B4CD546F83B605DEF80D2651D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0476C0E71D3DE5B26893AD629D31281 /* Pods-OptionMeFood.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-OptionMeFood/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OptionMeFood/Pods-OptionMeFood.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OptionMeFood;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -574,39 +866,6 @@
 			};
 			name = Release;
 		};
-		DE2461860F4CEB08A40D60D0B3809544 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75B5B0D81D07FBD2D77C074B030F0F9D /* Pods-OptionMeFood.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-OptionMeFood/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-OptionMeFood/Pods-OptionMeFood.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_OptionMeFood;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -619,11 +878,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5515C06A9BA9AC7AF4D7013C24C6A1E8 /* Build configuration list for PBXNativeTarget "Pods-OptionMeFood" */ = {
+		382455A94CB2BAF3CEF09AF399B924BD /* Build configuration list for PBXNativeTarget "Pods-OptionMeFood" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2089F67202D00ACD9A6F87AFAC18307D /* Debug */,
-				DE2461860F4CEB08A40D60D0B3809544 /* Release */,
+				A721A6B4CD546F83B605DEF80D2651D0 /* Debug */,
+				36C6D33F18D0CE5110E1CA22620DE416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BA2FC259999CD7A5937B0E53E3A19FE /* Build configuration list for PBXNativeTarget "ALCameraViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5311AF5C1375D3127103CEBAE164AB8A /* Debug */,
+				6F853CA4451DD26A1A3DB1C25AEACF95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

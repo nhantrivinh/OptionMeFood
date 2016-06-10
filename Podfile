@@ -12,5 +12,6 @@ target 'OptionMeFood' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'GoogleSignIn'
+  pod 'ALCameraViewController'
 
 end

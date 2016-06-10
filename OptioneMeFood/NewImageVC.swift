@@ -8,31 +8,23 @@
 
 import UIKit
 import Firebase
+import ALCameraViewController
 
 class NewImageVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
-    let imagePicker = UIImagePickerController()
+    @IBOutlet weak var btnUpload: UIButton!
+    
+    @IBOutlet weak var imageView: DesignableImageView!
+    
+    let croppingEnabled = true
+    
+    var imageData: NSData!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        imagePicker.delegate = self
-        // Do any additional setup after loading the view.
-        // File located on disk
-//        let localFile: NSURL = ...
-        // Create a reference to the file you want to upload
-//        let riversRef = REF_STORAGE_IMAGES.child(<#T##path: String##String#>)
         
-        // Upload the file to the path "images/rivers.jpg"
-//        let uploadTask = riversRef.putFile(localFile, metadata: nil) { metadata, error in
-//            if (error != nil) {
-//                // Uh-oh, an error occurred!
-//            } else {
-//                // Metadata contains file metadata such as size, content-type, and download URL.
-//                let downloadURL = metadata!.downloadURL
-//            }
-//        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,15 +32,72 @@ class NewImageVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         // Dispose of any resources that can be recreated.
     }
     
-
-    func selectImage() {
-        imagePicker.allowsEditing = true
-        imagePicker.sourceType = .PhotoLibrary
-    }
+//    @IBAction func doneBtnDidTouch(sender: AnyObject) {
+//        if self.imageData == nil {
+//            print("Choose an image")
+//        } else {
+//            
+//            let photosRef = REF_STORAGE_IMAGES
+//            let username = "test"
+//            DataService.instance.REF_USERNAMES.queryOrderedByKey().observeSingleEventOfType(.Value, withBlock: { (snapshot) in
+//                let refUser = DataService.instance.REF_USERNAMES.child(username)
+//            })
+//            
+//            let photoRef = photosRef.child("\(uid)\(NSUUID().UUIDString).jpeg")
+//            
+//            // Upload file to Firebase Storage
+//            let metadata = FIRStorageMetadata()
+//            metadata.contentType = "image/jpeg"
+//            
+//            let uploadTask = photoRef.child(key).(uid).putData(imageData, metadata: metadata)
+//            
+//            uploadTask.observeStatus(.Progress, handler: { (snapshot) in
+//                // Upload reported progress
+//                if let progress = snapshot.progress {
+//                    let percentComplete = 100 * Double(progress.completedUnitCount) / Double(progress.totalUnitCount)
+//                    
+//                    let percentInt = Int(percentComplete)
+//                    let percentCGFloat = CGFloat(percentComplete/100)
+//                    self.imageView.alpha = percentCGFloat
+//                }
+//            })
+//            
+//            uploadTask.observeStatus(.Success) { (snapshot) in
+//                // When the image has successfully uploaded, we get it's download URL
+//                if let text = snapshot.metadata?.downloadURL()?.absoluteString {
+//                    print(text)
+//                    print("image uploaded")
+//                }
+//                
+//            }
+//            
+//            uploadTask.observeStatus(.Failure) { (snapshot) in
+//                // When the image has successfully uploaded, we get it's download URL
+//                if let text = snapshot.metadata?.downloadURL()?.absoluteString {
+//                    print(text)
+//                    print("image failed to upload")
+//                }
+//                
+//            }
+//            
+//        }
+//        
+//
+//    }
     
-    func selectCamera() {
-        imagePicker.allowsEditing = true
-        imagePicker.sourceType = .Camera
+    @IBAction func btnUploadDidTouch(sender: AnyObject) {
+        let libraryViewController = CameraViewController.imagePickerViewController(croppingEnabled) { image, asset in
+            if image != nil {
+                self.imageView.image = image
+                self.imageData = UIImageJPEGRepresentation(image!, 1)
+            } else {
+                print("No image")
+            }
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+        presentViewController(libraryViewController, animated: true, completion: nil)
+        
     }
 
 }

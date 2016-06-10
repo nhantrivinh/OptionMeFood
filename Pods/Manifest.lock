@@ -1,4 +1,5 @@
 PODS:
+  - ALCameraViewController (1.2.0)
   - Firebase (3.2.0):
     - Firebase/Core (= 3.2.0)
   - Firebase/Analytics (3.2.0):
@@ -59,6 +60,7 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
 
 DEPENDENCIES:
+  - ALCameraViewController
   - Firebase
   - Firebase/Auth
   - Firebase/Database
@@ -67,6 +69,7 @@ DEPENDENCIES:
   - GoogleSignIn
 
 SPEC CHECKSUMS:
+  ALCameraViewController: 03b480d0b41d3afc21fca48fc45345893ce2680a
   Firebase: 6d4012da1598732a2b43f16d8355eca90f94ed59
   FirebaseAnalytics: 6f75b04e6bfb8e0b6e9ef298e04c24eea3b13863
   FirebaseAuth: 94b851fc345ce98036dfedfdc2eddeaef8fa3b4c
@@ -83,6 +86,6 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
 
-PODFILE CHECKSUM: dd3e56726ed346767bcc3aee16b2e062ad9bd72f
+PODFILE CHECKSUM: cd70ca030b934934095b2a45619614c3fed8fff3
 
 COCOAPODS: 1.0.0
